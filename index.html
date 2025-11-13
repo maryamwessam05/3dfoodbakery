@@ -4,8 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bake Today</title>
+    
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 </head>
 <body>
+    <header>
+        <img class="logo" src="img/logo.svg" alt="">
+        <nav>
+            <ul>
+                <li class="selected">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="reviews.html">Reviews</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="prof_cart">
+            <img src="img/profile.svg" alt="">
+            <img src="img/cart.svg" alt="">
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="herosection">
+                <div class="greendiv">
+                    <div class="greentxt">
+                        BAKED TO <br>
+                        PERFECTION
+                    </div>
+                    
+                </div>
+                <div class="crois">
+                    <model-viewer  class="croissant" src="croissant+3d+model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+                    </model-viewer>
+                </div>
+                
+
+                <div class="beigediv">
+                    <div class="beigetxt">
+                        SEEN IN <br> EVERY DETAIL
+                    </div>
+                    
+                </div>
+            </div>
+            <button class="explore">
+                EXPLORE MENU
+            </button>
+        </section>
+
+        <section class="section2">
+            <div class="half1">
+                <h2>Interactive 3D Experience</h2>
+                <p>Rotate, zoom, and explore our handcrafted pastries in stunning detail. See what makes each bake special.</p>
+                <div class="choices">
+                    <button  class="type selectedbox">CAKES</button>
+                    <button class="type">PASTRIES</button>
+                    <button class="type">BREAD</button>
+                    <button class="type">DESSERTS</button>
+                </div>
+            </div>
+            <div class="half2">
+                <div class="halfcircle"></div>
+                <div class="cakecontainer">
+                    <div class="cakecont">
+                        <model-viewer class="cake" src="3d models/fbx.glb" ar ar-modes="webxr scene-viewer
+                        quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="173.4deg 61.8deg 1.823m" field-of-view="30deg"> </model-viewer>
+                    </div>
+                    <img class="cakestxt" src="img/CAKES.svg" alt="">
+                </div>
+                
+                <div class="pastconatiner">
+                    <div class="pastrycont">
+                        <model-viewer class="pastry" src="3d models/chocolate_pastry_ti2jdifva_raw.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="252.6deg 7.306deg 0.2335m" field-of-view="30deg"> </model-viewer>
+                    </div>
+                    <img class="pastrytxt" src="img/CAKES.svg" alt="">
+                </div>
+                
+                
+            </div>
+                
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="code.js"></script>
     
 </body>
 </html>

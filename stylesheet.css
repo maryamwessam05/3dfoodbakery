@@ -1,0 +1,362 @@
+:root{
+    --beige : #FFFDF4;
+    --green : #2E422C;
+    --body : #313131;
+    --grey: #5B5758;
+}
+
+
+
+
+@font-face {
+    font-family: 'Winter Vibes';
+    src: url('font/Winter-Vibes-BF68da081a0b706.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body{
+    background-color: var(--beige);
+  }
+
+  header{
+    width: 100%;
+    display: flex;
+    padding: 0 48px;
+    align-items: center;
+    gap: 37px;
+    border-bottom: 1px solid var(--grey, #5B5758);
+    justify-content: space-between;
+
+  }
+
+  ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-family: "Roboto Condensed";
+    padding: 0;
+  }
+
+  li a{
+    color: var(--grey, #5B5758);
+    font-family: "Roboto Condensed";
+    font-size: clamp(10px, 2vw, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 78.24%; /* 14.083px */
+    text-decoration: none;
+  }
+
+  li{
+    display: flex;
+    padding: clamp(25px, 4vw, 40px) clamp(40px, 6vw, 70px);
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #5B5758;
+    background: #FFFDF4;
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+
+
+  .logo{
+    min-width: 70px;
+    max-width: 122px;
+  }
+
+  .prof_cart{
+    display: flex;
+align-items: center;
+gap: 27px;
+align-self: stretch;
+  }
+
+  .selected{
+    background: var(--grey);
+  }
+
+  .selected a{
+    color: var(--beige) ;
+  }
+
+  li:hover{
+    background: var(--grey);
+    color: #FFFDF4;
+  }
+
+  li:hover a{
+    color: var(--beige) !important;
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .herosection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .greendiv{
+    width: 50%;
+    background: var(--green, #2E422C);
+    color: var(--beige, #FFFDF4);
+    text-align: right;
+    font-family: "Winter Vibes";
+    font-size: clamp(92px, 8vw, 160px);
+    font-style: normal;
+    font-weight: 400;
+    line-height:  78.24%;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 115px 140px 115px 40px;
+  }
+
+  .beigediv{
+    width: 50%;
+    background: var(--beige);
+    color: var(--grey, #5B5758);
+    text-align: left;
+    font-family: "Winter Vibes";
+    font-size: clamp(92px, 8vw, 160px);
+    font-style: normal;
+    font-weight: 400;
+    line-height:  78.24%; ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 115px 140px 115px 40px;
+  }
+
+  .croissant{
+    position: absolute;
+    scale: 3;
+    z-index: 9999;
+    animation: scale 600ms ease 300ms forwards;
+    opacity: 0;
+  }
+
+  .explore{
+    display: flex;
+    padding: 25px 80px;
+    justify-content: center;
+    align-items: center;
+    margin: -15px;
+    gap: 10px;
+    position: relative;
+    border: 2px solid var(--grey, #5B5758);
+    background: var(--beige, #FFFDF4);
+    color: var(--grey, #5B5758);
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 78.24%; /* 18.778px */
+    transition: all 300ms ease;
+    cursor: pointer;
+  }
+
+  .greentxt{
+    display: inline-block; 
+    overflow: hidden;
+    position: relative;
+    height: 191px;
+    opacity: 0;
+    white-space: nowrap;
+    animation: slideFromLeft 600ms ease 300ms forwards;
+  }
+
+  .beigetxt{
+    display: inline-block; 
+    overflow: hidden;
+    height: 191px;
+    opacity: 0;
+    position: relative;
+    white-space: nowrap;
+    animation: slideFromRight 600ms ease 300ms forwards;
+  }
+
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;                  
+    }
+    100% {
+      transform: translateX(35%);     
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100%); 
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-1%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale {
+    0% {
+      scale: 0;
+      opacity: 0;
+    }
+    100% {
+      scale: 3;
+      opacity: 1;
+    }
+  }
+
+.explore:hover{
+    border: 2px solid var(--beige, #FFFDF4);
+background: var(--grey, #5B5758);
+color: var(--beige, #FFFDF4);
+
+}
+
+.section2{
+    position: relative;
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+
+}
+
+.half1{
+    display: flex;
+    padding: 55px 66px;
+    width: 45%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+    border-right: 1px solid var(--grey, #5B5758);
+}
+
+.half1 h2{
+    color: var(--grey, #5B5758);
+    font-family: "Winter Vibes";
+    font-size: 113.355px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 113.355px; /* 100% */
+    letter-spacing: 2.267px;
+}
+
+.half1 p{
+    color: var(--grey, #5B5758);
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 116.667% */
+}
+
+.type{
+    display: flex;
+    padding: 25px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--grey, #5B5758);
+    background: var(--beige, #FFFDF4);
+    color: var(--grey, #5B5758);
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 78.24%; /* 18.778px */
+    cursor: pointer;
+}
+.choices{
+    display: flex;
+    width: 491px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.selectedbox{
+    background-color: var(--grey) !important;
+    color: var(--beige) !important;
+}
+
+.halfcircle{
+    background: var(--green);
+    width: 367.425px;
+height: 734.85px;
+border-top-left-radius: 406px;
+border-bottom-left-radius: 406px;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+.half2{
+    width: 55%;
+    position: relative;
+    height: 78vh;
+}
+
+.cakecont{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 552.331px;
+height: 555.628px;
+position: relative;
+left: 109px;
+}
+
+.cake{
+    scale: 3.5;
+}
+
+.crois{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cakestxt{
+    position: absolute;
+    top: 319px;
+    left: 45px;
+}
+
+.pastconatiner{
+    position: absolute;
+    top: 82px;
+    left: 212px;
+}
+
+.pastrycont{
+    display: flex;
+width: 388.213px;
+height: 394.531px;
+justify-content: center;
+align-items: center;
+}
+
+.pastry{
+    scale: 3;
+}
