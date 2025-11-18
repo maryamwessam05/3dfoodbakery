@@ -22,6 +22,10 @@
 
   body{
     background-color: var(--beige);
+    background-image: url(img/LANDING.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   header{
@@ -246,6 +250,9 @@ color: var(--beige, #FFFDF4);
     flex-direction: column;
     align-items: flex-start;
     gap: 31px;
+    opacity: 0;
+    transform: translateX(-50px); /* or +50px depending on direction */
+    transition: all 0.5s ease; 
     border-right: 1px solid var(--grey, #5B5758);
 }
 
@@ -301,8 +308,8 @@ color: var(--beige, #FFFDF4);
 
 .halfcircle{
     background: var(--green);
-    width: 367.425px;
-height: 734.85px;
+        width: 347.425px;
+    height: 643.85px;
 border-top-left-radius: 406px;
 border-bottom-left-radius: 406px;
 position: absolute;
@@ -314,6 +321,9 @@ top: 0;
     width: 55%;
     position: relative;
     height: 78vh;
+    opacity: 0;
+    transform: translateX(50px); 
+    transition: all 0.5s ease; 
 }
 
 .cakecont{
@@ -346,7 +356,8 @@ left: 109px;
 .pastconatiner{
     position: absolute;
     top: 82px;
-    left: 212px;
+    left: 172px;
+    display: none;
 }
 
 .pastrycont{
@@ -359,4 +370,272 @@ align-items: center;
 
 .pastry{
     scale: 3;
+}
+
+.pastrytxt{
+      position: absolute;
+    top: 227px;
+    left: -63px;
+}
+
+.breadconatiner{
+  position: absolute;
+  top: 51px;
+  display: none;
+}
+
+.breadcont{
+  overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 488px;
+height: 491px;
+position: relative;
+left: 109px;
+}
+
+.bread{
+  scale: 2.8;
+}
+
+.breadtxt{
+      position: absolute;
+    top: 286px;
+    left: 70px;
+}
+
+.dessertconatiner{
+      position: absolute;
+    top: 31px;
+    display: none;
+
+}
+
+.dessertcont{
+   overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 499.431px;
+height: 502.413px;
+position: relative;
+left: 109px;
+}
+
+.dessert{
+  scale: 3;
+}
+
+.desserttxt{
+    position: absolute;
+    top: 286px;
+    left: 70px;
+}
+
+.section3{
+  display: inline-flex;
+padding-right: 50px;
+padding-top: 100px;
+align-items: center;
+gap: 65px;
+ padding-bottom: 54px;
+    max-width: 1600px;
+    position: relative;
+    height: 105vh;
+    width: 100%;
+  }
+
+  .sec3_img{
+    position: relative;
+    width: 45%;
+    background-image: url(img/img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        padding-top: 158px;
+    padding-right: 28px;
+    opacity: 0;
+    transform: translateX(50px); 
+    transition: all 0.5s ease;
+  }
+.im3{
+  object-fit: cover;
+    width: 100%;
+}
+  .sec3_txt{
+    display: flex;
+width: 637px;
+flex-direction: column;
+align-items: flex-start;
+gap: 73px;
+opacity: 0;
+    transform: translateX(-50px); 
+    transition: all 0.5s ease;
+  }
+
+.ourstory{
+  display: flex;
+width: 476px;
+height: 59px;
+padding: 10px 17px;
+align-items: center;
+gap: 38px;
+border: 1px solid var(--grey, #5B5758);
+}
+
+.ourstory span{
+  color: var(--grey, #5B5758);
+text-align: center;
+font-family: "Roboto Condensed";
+font-size: 32px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+}
+
+.sec3title h1{
+  color: #2E422C;
+font-family: "Winter Vibes";
+font-size: 109.355px;
+font-style: normal;
+font-weight: 400;
+line-height: 113.355px; /* 100% */
+letter-spacing: 2.267px;
+}
+
+.sec3title span{
+  color: #2E422C;
+font-family: Allison;
+font-size: 151px;
+font-style: normal;
+font-weight: 400;
+line-height: 113.355px;
+letter-spacing: 3.02px;
+}
+
+.sec3title{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 31px;
+align-self: stretch;
+}
+
+.sec3title p {
+  color: #4B5563;
+font-family: "Roboto Condensed";
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px; /* 116.667% */
+}
+
+
+.section3:hover .crois3 {
+  animation: croisani 1.5s ease forwards;
+}
+
+@keyframes croisani {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.8) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.8) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(180deg);
+  }
+}
+
+.section4{
+  padding-top:123px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+.section4 h2{
+  color: var(--green, #2E422C);
+font-family: "Winter Vibes";
+font-size: 113.355px;
+font-style: normal;
+font-weight: 400;
+line-height: 113.355px; /* 100% */
+letter-spacing: 2.267px;
+}
+
+.section4 span{
+  color: var(--green, #2E422C);
+font-family: Allison;
+font-size: 151.36px;
+font-style: normal;
+font-weight: 400;
+line-height: 113.355px;
+letter-spacing: 3.027px;
+}
+.timeline_cont{
+  position: relative;
+  width: 100%;
+      padding-top: 7%;
+}
+.timeline{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+
+.time2015{
+  display: flex;
+padding: 27px 136px 26.269px 37px;
+align-items: flex-start;
+gap: 15vw;
+flex-shrink: 0;
+width: 100%;
+}
+
+.contoven{
+
+overflow: hidden;
+width: 481.094px;
+height: 410px;
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oven{
+  scale: 3;
+}
+
+.img2015{
+  background-image: url(img/Frame\ 42.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size:cover ;
+  width: 50%;
+}
+
+.bread4{
+  position: absolute;
+  z-index: 99;
+  scale: 2;
+  left: 25%;
+}
+
+.txt2015{
+  display: flex;
+width: 558px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+flex-shrink: 0;
 }
