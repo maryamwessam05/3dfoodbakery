@@ -160,12 +160,11 @@ li:hover a{
   /* padding: 115px 140px 115px 40px; */
 }
 
-.croissant{
-  position: absolute;
-  scale: 3;
-  z-index: 9999;
-  animation: scale 600ms ease 300ms forwards;
-  opacity: 0;
+.croissanth{
+ width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 999;
 }
 
 .explore{
@@ -362,6 +361,9 @@ left: 109px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 352px;
+height: 451.478px;
+position: absolute;
   
 }
 .cakestxt{
@@ -455,7 +457,7 @@ display: inline-flex;
 
 align-items: center;
 padding: 100px 50px 54px 50px;
-gap: 65px;
+justify-content: space-between;
 
   max-width: 1600px;
   position: relative;
@@ -922,4 +924,166 @@ height: 210px;
 
 .cupcake5{
   scale: 2;
+}
+
+footer{
+  display: flex;
+width: 100%;
+height: 55vh;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 89px;
+font-family: "Roboto Condensed";
+background: var(--green, #2E422C);
+color: white;
+}
+
+.footcol{
+  width: 25%;
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+}
+
+.footerrow{
+  display: flex;
+width: 85%;
+align-items: flex-start;
+gap: 32px;
+
+}
+
+.footcol h4{
+  color: var(--beige, #FFFDF4);
+
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 140% */
+}
+
+.footcol p{
+  color: var(--beige, #FFFDF4);
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+.footcol h5{
+  color: var(--beige, #FFFDF4);
+
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 155.556% */
+}
+
+.footcol a{
+  color: var(--beige, #FFFDF4);
+text-decoration: none;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.links{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+}
+
+
+@media (min-width: 834px) and (max-width: 1070px) {
+  li a {
+    font-size: 10px;
+  }
+  header{
+    height: 56px;
+  }
+  .logo{
+    width: 70px;
+  }
+  .prof_cart img{
+    width: 21px;
+  }
+  .prof_cart{
+    gap: 15px;
+  }
+  .greendiv{
+    padding-right: 19vw;
+  }
+  .explore{
+    padding: 14.479px 46.333px;
+    font-size: 13.9px;
+  }
+  .half1{
+    padding: 31.876px 38.252px;
+    width: 47%;
+    gap: 17.967px;
+  }
+  .half1 h2{
+    font-size: 65.697px;
+    line-height: 65.697px;
+  }
+  .half1 p{
+    font-size: 13.91px;
+    line-height: 16.228px;
+  }
+  .type{
+    padding: 14.489px 28.978px;
+    font-size: 13.91px;
+    border: 1.159px solid var(--grey, #5B5758);
+  }
+  .choices{
+    width: 315px;
+    gap: 5.796px;
+  }
+  .halfcircle{
+    width: 212.948px;
+height: 425.897px;
+  }
+  .cake{
+    scale: 2.2;
+  }
+  .cakecont{
+    justify-content: flex-start;
+    width: 552.331px;
+    height: 439.628px;
+  }
+  .cakestxt{
+    top: 266px;
+    width: 17vw;
+  }
+  .pastrycont{
+        justify-content: flex-start;
+  }
+
+  .pastry{
+    scale: 2;
+  }
+
+  .pastconatiner{
+    top: 22px;
+    left: 81px;
+  }
+
+  .pastrytxt{
+    left: -11px;
+    width: 17vw;
+  }
+  .breadcont{
+    justify-content: flex-start;
+  }
+  .breadconatiner{
+    top: 0;
+  }
+  .bread{
+    scale: 2.2;
+  }
 }

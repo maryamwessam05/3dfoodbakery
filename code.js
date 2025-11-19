@@ -58,6 +58,7 @@ section2.onmouseenter = function () {
             half1.style.transform = "translateX(0)";
             half2.style.opacity = "1";
             half2.style.transform = "translateX(0)";
+            
 
         }
 
