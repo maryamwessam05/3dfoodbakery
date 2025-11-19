@@ -75,3 +75,43 @@ section3.onmouseenter = function () {
             sec3_txt.style.transform = "translateX(0)";
 
         }
+
+
+
+        let time2015 = document.querySelector(".time2015");
+        let img2015 = document.querySelector(".img2015");
+        let txt2015 = document.querySelector(".txt2015");
+        let time2018 = document.querySelector(".time2018");
+        let img2018 = document.querySelector(".img2018");
+        let txt2018 = document.querySelector(".txt2018");
+        let time2025 = document.querySelector(".time2025");
+        let img2025 = document.querySelector(".img2025");
+        let txt2025 = document.querySelector(".txt2025");
+
+
+        time2015.onmouseenter = function () {
+
+            img2015.style.opacity = "1";
+            img2015.style.transform = "translateX(0)";
+            txt2015.style.opacity = "1";
+            txt2015.style.transform = "translateX(0)";
+
+        }
+
+        time2018.onmouseenter = function () {
+
+            img2018.style.opacity = "1";
+            img2018.style.transform = "translateX(0)";
+            txt2018.style.opacity = "1";
+            txt2018.style.transform = "translateX(0)";
+
+        }
+
+        time2025.onmouseenter = function () {
+
+            img2025.style.opacity = "1";
+            img2025.style.transform = "translateX(0)";
+            txt2025.style.opacity = "1";
+            txt2025.style.transform = "translateX(0)";
+
+        }
