@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bake Today</title>
-    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<!-- ScrollSmoother requires ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,8 +44,27 @@
             </ul>
         
         <div class="prof_cart">
-            <img src="img/profile.svg" alt="">
+            <img class="prof" src="img/profile.svg" alt="">
             <img src="img/cart.svg" alt="">
+            <img class="burger" src="img/burger.svg" alt="">
+        </div>
+        <div class="burgermenu">
+            <img src="img/logow.svg" alt="">
+            <div class="burgerlist">
+                <a class="burgerlink" href="index.html">HOME</a>
+                <a class="burgerlink" href="index.html">MENU</a>
+                <a class="burgerlink" href="index.html">ABOUT</a>
+                <a class="burgerlink" href="index.html">REVIEWS</a>
+                <a class="burgerlink" href="index.html">CONTACT</a>
+            </div>
+            <div class="profiletab">
+                <img src="img/profileb.svg" alt="">
+                <div class="proftxt">
+                    <h5>Maryam Wessam</h5>
+                    <span>maryamwessam2005@gmail.com</span>
+                </div>
+            </div>
+            <img id="x" src="img/x.svg" alt="">
         </div>
     </header>
     <main>
@@ -54,8 +78,8 @@
                     
                 </div>
                 <div class="crois">
-<model-viewer src="3d models/croissant+3d+model.glb" class="croissanth"  disable-zoom camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="36.34deg 77.57deg 2.51m" field-of-view="30deg"> </model-viewer>
-                    </model-viewer>
+                    <model-viewer class="croissanth" disable-zoom src="croissant+3d+model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="-142.2deg 77.78deg 2.51m" field-of-view="30deg"> </model-viewer>
+                </model-viewer>
                 </div>
                 
 
@@ -87,20 +111,20 @@
                 <div class="cakecontainer">
                     <div class="cakecont">
                         <model-viewer poster="poster.webp" class="cake" src="3d models/fbx.glb" ar ar-modes="webxr scene-viewer
-                        quick-look" camera-controls tone-mapping="neutral"  shadow-intensity="1" camera-orbit="173.4deg 61.8deg 1.823m" field-of-view="30deg" auto-rotate> </model-viewer>
+                        quick-look" camera-controls tone-mapping="neutral"  shadow-intensity="1" camera-orbit="173.4deg 61.8deg 1.823m" field-of-view="30deg" auto-rotate disable-zoom> </model-viewer>
                     </div>
                     <img class="cakestxt" src="img/CAKES.svg" alt="">
                 </div>
                 
                 <div class="pastconatiner">
                     <div class="pastrycont">
-                        <model-viewer poster="poster.webp" class="pastry" src="3d models/chocolate_pastry_ti2jdifva_high.glb" camera-controls tone-mapping="neutral"  shadow-intensity="1" camera-orbit="252.6deg 7.306deg 0.2335m" field-of-view="30deg"  auto-rotate> </model-viewer>
+                        <model-viewer poster="poster.webp" class="pastry" src="3d models/chocolate_pastry_ti2jdifva_high.glb" ar ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls tone-mapping="neutral"  shadow-intensity="1" camera-orbit="252.6deg 7.306deg 0.2335m" field-of-view="30deg"  auto-rotate> </model-viewer>
                     </div>
                     <img class="pastrytxt" src="img/PASTRIES.svg" alt="">
                 </div>
                 <div class="breadconatiner">
                     <div class="breadcont">
-                    <model-viewer disable-zoom poster="poster.webp"  class="bread" auto-rotate src="3d models/stripe_bread_tesrabopa_high.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1" camera-orbit="18.76deg 0.9875deg 0.3779m" field-of-view="30deg"> </model-viewer>
+                    <model-viewer poster="poster.webp"  class="bread" auto-rotate src="3d models/stripe_bread_tesrabopa_high.glb" ar ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls tone-mapping="neutral" shadow-intensity="1" camera-orbit="18.76deg 0.9875deg 0.3779m" field-of-view="30deg"> </model-viewer>
 
                     </div>
                     <img class="breadtxt" src="img/BREADS.svg" alt="">
@@ -108,7 +132,7 @@
                 
                 <div class="dessertconatiner">
                     <div class="dessertcont">
-                     <model-viewer poster="poster.webp" class="dessert" src="3d models/chocolate_donut.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"  shadow-intensity="1" auto-rotate camera-orbit="53.12deg 33.18deg 2.703m" field-of-view="30deg"> </model-viewer>
+                     <model-viewer poster="poster.webp" disable-zoom class="dessert" src="3d models/chocolate_donut.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"  shadow-intensity="1" auto-rotate camera-orbit="53.12deg 33.18deg 2.703m" field-of-view="30deg"> </model-viewer>
 
 
                     </div>
@@ -139,7 +163,12 @@
         <section class="section4">
             <h2>From <span>Oven</span> to Heart</h2>
             <div class="timeline_cont">
-            <img src="img/Group 1.svg" class="timeline" alt="">
+                <div class="timeline">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="64" height="1450" viewBox="0 0 64 1450" fill="none">
+                        <path d="M19.9987 0.133301C31.4962 128.831 -0.749505 197.829 1.62558 294.266C3.51679 371.056 17.1319 447.833 11.5294 524.442L4.95531 614.336C-0.312764 686.371 6.37006 758.782 24.7332 828.637L48.4722 918.941C63.3101 975.385 65.6168 1034.39 55.2305 1091.82L25.2317 1257.7C21.8168 1276.58 24.3159 1295.95 29.4799 1314.43C40.1962 1352.79 48.0214 1410.53 28.4988 1457.63C3.29878 1518.43 17.9988 1555.63 28.4988 1566.63" stroke="#5B5758" stroke-width="3" />
+                      </svg>
+                </div>
+            <!-- <img src="img/Group 1.svg" class="timeline" alt=""> -->
                 <div class="time2015">
                     <div class="img2015">
                         <div class="contoven">
@@ -157,7 +186,7 @@
                 <div class="time2018">
                     <div class="img2018">
                         <div class="bakerycont">
-                            <model-viewer disable-zoom class="bakery" src="3d models/cakepack_06.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0.39" disable-zoom exposure="0.68" shadow-softness="1" min-camera-orbit="57deg 65deg auto" max-camera-orbit="57deg 132deg auto" camera-orbit="57deg 87.92deg 5.579m" field-of-view="22.58deg" > </model-viewer>
+                            <model-viewer disable-zoom class="bakery" src="3d models/cakepack_06.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0.39" disable-zoom exposure="0.68" shadow-softness="1" min-camera-orbit="57deg 65deg auto" field-of-view="22.58deg" > </model-viewer>
 
                         </div>
                         <img class="sticker" src="img/Frame 37.svg" alt="">
@@ -192,7 +221,7 @@
             <div class="cat_home">
                 <div class="cakecard">
                     <div class="hov3d">
-                        <model-viewer class="cake5" src="3d models/cake.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="156deg 47.74deg 1.558m" field-of-view="30deg""> </model-viewer>
+                        <model-viewer class="cake5" src="3d models/cake.glb" disable-zoom ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="52.61deg 46.58deg 1.558m" field-of-view="30deg"> </model-viewer>
 
                     </div>
                     <div class="cardimg">
@@ -207,7 +236,7 @@
                 </div>
                 <div class="cakecard">
                     <div class="hov3d">
-                        <model-viewer poster="poster.webp" class="pastry3" src="3d models/chocolate_pastry_ti2jdifva_high.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"  shadow-intensity="1" camera-orbit="252.6deg 7.306deg 0.2335m" field-of-view="30deg"  auto-rotate> </model-viewer>
+                        <model-viewer disable-zoom poster="poster.webp" class="pastry3" src="3d models/chocolate_pastry_ti2jdifva_high.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"  shadow-intensity="1" camera-orbit="252.6deg 7.306deg 0.2335m" field-of-view="30deg"  auto-rotate> </model-viewer>
 
                     </div>
                     <div class="cardimg">
@@ -256,49 +285,49 @@
     </main>
     <footer>
         <div class="footerrow">
-<div class="footcol">
-            <h4>BAKE TODAY</h4>
-            <p>Get new bakes and seasonal <br> specials delivered digitally</p>
-            <img src="img/footicons.svg" alt="">
-        </div>
-        <div class="footcol">
-            <h5>Quick Links</h5>
-            <div class="links">
-                <a href="about.html">About Us</a>
-                <a href="menu.html">Menu</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <div class="footcol">
-            <h5>Quick Links</h5>
-            <div class="links">
-                <a href="about.html">About Us</a>
-                <a href="menu.html">Menu</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <div class="footcol">
-            <h5>Contact Info</h5>
-            <div class="links">
-                <div class="footrow">
-                    <img src="img/svg.svg" alt="">
-                    <a href=""> Nasr City, Cairo, Egypt</a>
-                </div>
-                <div class="footrow">
-                    <img src="img/svg-1.svg" alt="">
-                    <a href="">+20 2 2345 6789</a>
-                </div>
-                <div class="footrow">
-                    <img src="img/svg-2.svg" alt="">
-                    <a href="">info@baketoday.org.eg</a>
-                </div>
-            </div>
-        </div>
-        </div>
-        
-        <span>© 2024 Bake Today. All rights reserved.</span>
+            <div class="footcol">
+                        <span><img src="img/logo.svg" alt=""></span>
+                        <p>Get new bakes and seasonal <br> specials delivered digitally</p>
+                        <img src="img/footicons.svg" alt="">
+                    </div>
+                    <div class="footcol">
+                        <h5>Quick Links</h5>
+                        <div class="links">
+                            <a href="about.html">About Us</a>
+                            <a href="menu.html">Menu</a>
+                            <a href="reviews.html">Reviews</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <div class="footcol">
+                        <h5>Quick Links</h5>
+                        <div class="links">
+                            <a href="about.html">About Us</a>
+                            <a href="menu.html">Menu</a>
+                            <a href="reviews.html">Reviews</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <div class="footcol">
+                        <h5>Contact Info</h5>
+                        <div class="links">
+                            <div class="footrow">
+                                <img src="img/svg.svg" alt="">
+                                <a href=""> Nasr City, Cairo, Egypt</a>
+                            </div>
+                            <div class="footrow">
+                                <img src="img/svg-1.svg" alt="">
+                                <a href="">+20 2 2345 6789</a>
+                            </div>
+                            <div class="footrow">
+                                <img src="img/svg-2.svg" alt="">
+                                <a href="">info@baketoday.org.eg</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <span>© 2024 Bake Today. All rights reserved.</span>
     </footer>
 
     <script src="code.js"></script>

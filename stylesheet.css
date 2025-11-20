@@ -27,6 +27,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  position: relative;
   height: 100%;
 }
 
@@ -39,6 +40,7 @@ header{
   gap: 37px;
   border-bottom: 1px solid var(--grey, #5B5758);
   justify-content: space-between;
+  position: relative;
 }
 
 ul{
@@ -107,12 +109,54 @@ li:hover{
 li:hover a{
   color: var(--beige) !important;
 }
+.burger{
+  display: none;
+}
+.burgermenu{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  z-index: 999999;
+  background: #2E422C;
+  position: absolute;
+  left: 0;
+  top: -100vh;   
+  transition: top 0.4s ease; 
+}
+.burgermenu.active {
+  top: 0;                 
+}
 
+.burgerlist{
+  display: flex;
+width: 170px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 49px;
+}
+
+
+.burgerlist a{
+  text-decoration: none;
+  color: var(--beige, #FFFDF4);
+text-align: center;
+font-family: "Roboto Condensed";
+font-size: 35.333px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 .hero{
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 56vh;
+  width: 100%;
 }
 
 .herosection{
@@ -166,7 +210,11 @@ li:hover a{
     position: relative;
     z-index: 999;
 }
-
+main{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .explore{
   display: flex;
   padding: 25px 80px;
@@ -427,6 +475,8 @@ scale: 2.8;
 .dessertconatiner{
     position: absolute;
   top: 31px;
+  width: 100%;
+    height: 100%;
   display: none;
 
 }
@@ -457,9 +507,8 @@ display: inline-flex;
 
 align-items: center;
 padding: 100px 50px 54px 50px;
-justify-content: space-between;
+gap: 6vw;
 
-  max-width: 1600px;
   position: relative;
   height: 105vh;
   width: 100%;
@@ -488,7 +537,7 @@ object-fit: cover;
 }
 .sec3_txt{
   display: flex;
-width: 637px;
+width: 55%;
 flex-direction: column;
 align-items: flex-start;
 gap: 73px;
@@ -499,11 +548,14 @@ opacity: 0;
 
 .ourstory{
 display: flex;
-width: 476px;
-height: 59px;
+width: 70%;
+height: 6vw;
 padding: 10px 17px;
 align-items: center;
-gap: 38px;
+height: 6vw;
+    padding: 10px 17px;
+    justify-content: center;
+    gap: 0.5vw;
 border: 1px solid var(--grey, #5B5758);
 }
 
@@ -511,7 +563,7 @@ border: 1px solid var(--grey, #5B5758);
 color: var(--grey, #5B5758);
 text-align: center;
 font-family: "Roboto Condensed";
-font-size: 32px;
+font-size: 2vw;
 font-style: normal;
 font-weight: 200;
 line-height: normal;
@@ -581,6 +633,7 @@ justify-content: center;
 align-items: center;
 position: relative;
 flex-direction: column;
+width: 100%;
 }
 .section4 h2{
 color: var(--green, #2E422C);
@@ -612,23 +665,23 @@ width: 100%;
 .timeline{
 position: absolute;
 left: 50%;
-top: 9%;
-height: 87vw;
+top: 0;
+height: 70vw;
 }
 
 .time2015{
 display: flex;
-padding: 27px 136px 26.269px 37px;
+
 align-items: center;
-gap: 15vw;
+justify-content: space-between;
 flex-shrink: 0;
 width: 100%;
 }
 .time2018{
   display: flex;
-padding: 27px 37px 26.269px 136px;
+
 align-items: center;
-gap: 15vw;
+justify-content: space-between;
 flex-shrink: 0;
 width: 100%;
 flex-direction: row-reverse;
@@ -636,9 +689,9 @@ position: relative;
 }
 .time2025{
   display: flex;
-  padding: 27px 100px 26.269px 37px;
+
   align-items: center;
-  gap: 13vw;
+  justify-content: space-between;
   flex-shrink: 0;
   width: 100%;
   }
@@ -672,7 +725,7 @@ background-image: url(img/Frame\ 42.svg);
 background-position: top;
 background-repeat: no-repeat;
 background-size:cover ;
-width: 50%;
+width: 45%;
 opacity: 0;
   transform: translateX(-50px); 
   transition: all 0.5s ease;
@@ -682,7 +735,7 @@ opacity: 0;
   background-position: top;
   background-repeat: no-repeat;
   background-size:cover ;
-  width: 50%;
+  width: 45%;
   opacity: 0;
   transform: translateX(-50px); 
   transition: all 0.5s ease;
@@ -693,7 +746,7 @@ opacity: 0;
     background-position: top;
     background-repeat: no-repeat;
     background-size:cover ;
-    width: 50%;
+    width: 45%;
     opacity: 0;
   transform: translateX(-50px); 
   transition: all 0.5s ease;
@@ -721,24 +774,40 @@ opacity: 0;
   left: -22%;
   transform: rotate(-6deg);
 }
-.txt2015 , .txt2018 , .txt2025{
+.txt2015 , .txt2025{
 display: flex;
-width: 558px;
+width: 45%;
 flex-direction: column;
 align-items: flex-start;
 gap: 24px;
 flex-shrink: 0;
+padding-right: 5%;
 opacity: 0;
   transform: translateX(50px); 
   transition: all 0.5s ease;
 }
 
-
+.txt2018{
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+  padding-left: 5%;
+  opacity: 0;
+    transform: translateX(50px); 
+    transition: all 0.5s ease;
+  }
 
 .oven {
   width: 100%;
   height: 100%;
   scale: 1.3;
+  position: absolute;
+    scale: 1.3;
+    left: 0;
+    top: 0;
 }
 
 .bakery{
@@ -836,7 +905,7 @@ transition: all 300ms ease;
 
 .section5{
   margin-top: 5%;
-
+  width: 100%;
 }
 
 .cardtxt{
@@ -963,7 +1032,36 @@ font-style: normal;
 font-weight: 700;
 line-height: 28px; /* 140% */
 }
+.proftxt{
+  display: flex;
+width: 212px;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+}
 
+.proftxt h5{
+  color: var(--beige, #FFFDF4);
+font-family: "Roboto Condensed";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.proftxt span{
+  color: rgba(208, 208, 208, 0.50);
+font-family: "Roboto Condensed";
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.profiletab{
+  display: flex;
+align-items: center;
+gap: 26px;
+}
 .footcol p{
   color: var(--beige, #FFFDF4);
 
@@ -986,10 +1084,12 @@ line-height: 28px; /* 155.556% */
 text-decoration: none;
 font-size: 16px;
 font-style: normal;
-font-weight: 400;
+font-weight: 300;
 line-height: normal;
 }
-
+.footcol span{
+  filter: brightness(3.6);
+}
 .links{
   display: flex;
 flex-direction: column;
@@ -998,8 +1098,25 @@ gap: 8px;
 align-self: stretch;
 }
 
-
-@media (min-width: 834px) and (max-width: 1070px) {
+@media (min-width: 1600px){
+  .hero{
+    height: 82vh;
+  }
+  .section3{
+    height: 141vh;
+  }
+  .sec3_img{
+    width: 39%;
+    height: 100%;
+  }
+  .timeline{
+    height: 60vw;
+  }
+  .burgermenu{
+    display: none;
+  }
+} 
+@media (min-width: 600px) and (max-width: 1070px) {
   li a {
     font-size: 10px;
   }
@@ -1021,6 +1138,9 @@ align-self: stretch;
   .explore{
     padding: 14.479px 46.333px;
     font-size: 13.9px;
+  }
+  .svg{
+    height: 976px;
   }
   .half1{
     padding: 31.876px 38.252px;
@@ -1057,8 +1177,9 @@ height: 425.897px;
     height: 439.628px;
   }
   .cakestxt{
-    top: 266px;
+    top: 32vw;
     width: 17vw;
+
   }
   .pastrycont{
         justify-content: flex-start;
@@ -1074,8 +1195,9 @@ height: 425.897px;
   }
 
   .pastrytxt{
-    left: -11px;
+    left: -3vw;
     width: 17vw;
+    top: 27vw;
   }
   .breadcont{
     justify-content: flex-start;
@@ -1085,5 +1207,499 @@ height: 425.897px;
   }
   .bread{
     scale: 2.2;
+  }
+  .half2{
+    height: 52vh;
+  }
+  .breadtxt{
+    left: 6vw;
+    top: 29vw;
+    width: 17vw;
+  }
+  .dessertcont{
+    width: 76%;
+    height: 75%;
+  }
+  .dessert{
+    scale: 2;
+  }
+  .desserttxt{
+    left: 10vw;
+    top: 23vw;
+    width: 19vw;
+  }
+  .section3{
+    padding: 50px 20px;
+    height: 57vh;
+    gap: 4vw;
+  }
+  .sec3_img{
+    padding-top: 88px;
+    padding-right: 18px;
+  }
+
+  .crois3{
+    width: 21vw;
+  }
+  .ourstory span{
+    font-size: 18.533px;
+    
+  }
+  .ourstory{
+    gap: 1vw;
+    width: 75%;
+  }
+  .ourstory img{
+    width: 21vw;
+  }
+  .sec3_txt{
+    gap: 42.279px;
+    
+  }
+  .sec3title h1{
+    font-size: 65.651px;
+    line-height: 65.651px;
+    
+  }
+  .sec3title span{
+    font-size: 87.454px;
+    line-height: 65.651px;
+  }
+  .sec3title p{
+    font-size: 13.9px;
+    line-height: 16.217px;
+    
+  }
+
+  .sec3title{
+    gap: 17.954px;
+    
+  }
+
+  .section4{
+    padding-top: 50px;
+  }
+  .section4 h2{
+    font-size: 65.494px;
+    line-height: 65.494px;
+    letter-spacing: 1.31px;
+    
+  }
+  .section4 span{
+    font-size: 87.454px;
+    line-height: 65.651px;
+  }
+  .section4 h4{
+    font-size: 37.104px !important;
+    line-height: 30px;
+    
+  }
+  .txt2015 h3, .txt2018 h3, .txt2025 h3{
+    font-size: 53.48px;
+    line-height: 45.124px;
+    
+  }
+  .txt2015 p, .txt2018 p, .txt2025 p{
+    font-size: 13px;
+    line-height: 16px;
+    
+  }
+  .txt2015, .txt2018, .txt2025{
+   gap: 13.914px;
+   
+    
+  }
+
+  .time2015 , .time2025{
+  
+    justify-content: flex-start;
+    gap: 11vw;
+    height: 33vh;
+  }
+  .contoven{
+    height: 330px;
+  }
+  .oven{
+    scale: 1;
+    left: -27px;
+  }
+  .bread4{
+    left: 50%;
+    width: 68%;
+  }
+  .time2018{
+   
+    justify-content: flex-start;
+    gap: 6vw;
+    height: 33vh;
+  }
+  .sticker{
+    width: 14vw;
+    bottom: -17px;
+  }
+  .txt2015 , .time2025{
+    padding-right: 3%;
+  }
+  .txt2018{
+    padding-left: 3%;
+  }
+  .img2025{
+    width: 48%;
+    
+    height: 53vh;
+  }
+  .bakerycont{
+    height: 274px;
+  }
+  .bakery{
+    scale: 1.5;
+  }
+  .timeline{
+    height: 90vh;
+  }
+  .cardimg{
+    width: 120.311px;
+height: 121.227px;
+  }
+  .cardimg img{
+    width: 100%;
+  }
+  .cat_home{
+    height: 330px;
+  }
+  .cardtxt span{
+    font-size: 13.9px;
+    
+  }
+
+  .cardtxt h5{
+    font-size: 27.871px;
+  }
+  .cardtxt h6{
+    font-size: 11.583px;
+    
+  }
+  .cakecard{
+    gap: 15px;
+  }
+  .hov3d{
+    width: 208px;
+    height: 119px;
+    scale: 0.5;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+
+  .burger{
+    display: flex;
+    
+  }
+  .prof{
+    display: none;
+  }
+  ul{
+    display: none;
+  }
+  header{
+    padding: 57.898px 14.801px 12px 14.801px;
+    height: 132px;
+  }
+  .herosection{
+    flex-direction: column;
+  }
+  .greendiv , .beigediv{
+    width: 100%;
+    padding: 0;
+  }
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;                  
+    }
+    100% {
+      transform: translateX(0);     
+      opacity: 1;
+    }
+  }
+  .greentxt , .beigetxt{
+    text-align: center;
+  }
+
+  .beigetxt{
+    margin-top: 10vw;
+  }
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100%); 
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(17%);
+      opacity: 1;
+    }
+  }
+
+  .section2{
+    flex-direction: column;
+  }
+  .half1{
+    width: 100%;
+    padding: 0 35.625px;
+    gap: 5.398px;
+  }
+  .half1 h2{
+    font-size: 60px;
+    line-height: 61.185px; 
+    letter-spacing: 1.2px;
+  }
+  .half1 p{
+    font-size: 12.954px;
+line-height: 15.113px;
+  }
+  .type{
+
+padding: 13.494px 26.988px;
+gap: 5.398px;
+font-size: 12.954px;
+border: 1.08px solid var(--grey, #5B5758);
+
+  }
+
+  .choices{
+    width: 265.025px;
+  }
+  .half2{
+    width: 100%;
+    height: 44vh;
+    background-image: url(img/Frame\ 30.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .halfcircle{
+   display: none;
+  }
+  .cakecont{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 75px;
+    top: 40px;
+  }
+  main{
+    overflow: hidden;
+  }
+  .cake{
+    scale: 2;
+  }
+  .cakestxt{
+    top: 242px;
+    width: 30vw;
+  }
+  .pastrycont{
+    width: 300px;
+    height: 300px;
+    top: -6px;
+    left: -107px;
+    position: relative;
+  }
+  .pastconatiner{
+    right:  0;
+  }
+  .pastry{
+    scale: 2;
+  }
+  .pastrytxt{
+    top: 190px;
+    left: -119px;
+    width: 41vw;
+  }
+  .breadconatiner{
+    right: 0;
+  }
+
+  .breadcont{
+    width: 300px;
+    height: 300px;
+  }
+  .bread{
+    scale: 1.8;
+  }
+  .breadcont{
+    left: -42px;
+  }
+  .breadtxt{
+    top: 145px;
+    left: -62px;
+    width: 27vw;
+  }
+  .dessertcont{
+    width: 300px;
+    height: 300px;
+    
+  }
+  .dessert{
+    scale: 2;
+  }
+  .desserttxt{
+    top: 176px;
+    left: 62px;
+    width: 36vw;
+  }
+  .section3{
+    flex-direction: column;
+    padding: 40px 0 0 0;
+    margin-top: 50px;
+    gap: 20px;
+    height: 96vh;
+  }
+  .sec3_img{
+    width: 100%;
+    padding-top: 125px;
+  }
+  .crois3{
+    scale: 0.7;
+  }
+  .sec3_txt{
+    width: 100%;
+    padding: 42px 21px;
+    gap: 42.631px;
+  }
+  .ourstory{
+    width: 85%;
+    height: 14vw;
+    
+  }
+  .ourstory img{
+    width: 37vw;
+  }
+  .ourstory span{
+    font-size: 18.688px;
+  }
+  .sec3title h1{
+    font-size: 60px;
+    line-height: 66.198px;
+  }
+  .sec3title span{
+    font-size: 88.182px;
+    line-height: 66.198px;
+  }
+  .sec3title p{
+    font-size: 14.016px;
+line-height: 16.352px;
+  }
+  .section4{
+    
+    padding: 60px 22px;
+  }
+  .sec3title{
+    gap: 15px;
+  }
+  .section4 h2{
+    font-size: 60px;
+    line-height: 52.742px;
+    width: 80%;
+    text-align: center;
+  }
+  .section4 span{
+    font-size: 70.424px;
+line-height: 52.742px;
+  }
+  .timeline{
+    left: 89%;
+        top: 9%;
+        height: 263vw;
+
+  }
+  .time2015, .time2018 , .time2025{
+    flex-direction: column;
+  }
+  .img2015 , .img2018 , .img2025 , .txt2015 , .txt2018, .txt2025{
+    width: 100%;
+    padding: 0;
+    height: 100%;
+  }
+  .oven{
+    scale: 1;
+    left: -28px;
+  }
+  .section5{
+    height: 80.4vh;
+  }
+  .bread4{
+    left: 44%;
+    width: 71%;
+  }
+  .contoven{
+    height: 370px;
+  }
+  .txt2015 h3, .txt2018 h3, .txt2025 h3{
+    font-size: 53.48px;
+    line-height: 45.124px;
+    
+  }
+  .txt2015 h4, .txt2018 h4, .txt2025 h4{
+    font-size: 37.104px !important;
+    line-height: 35.718px;
+    
+  }
+  .txt2015 p, .txt2018 p, .txt2025 p{
+    font-size: 13px;
+    line-height: 16px;
+    width: 80%;
+    
+  }
+  .txt2015, .txt2018, .txt2025{
+   gap: 13.914px;
+   
+    
+  }
+  .sticker{
+    bottom: 26px;
+    right: -12px;
+    width: 34vw;
+  }
+  .cakecard{
+    width: 50%;
+  }
+  .cat_home{
+    flex-wrap: wrap;
+    height: 370px;
+  }
+  .cakecard img{
+    width: 120.311px;
+height: 121.227px;
+  }
+  .cardtxt span{
+    font-size: 13.9px;
+    
+  }
+  .croissanth{
+    width: 70%;
+   }
+  .cardtxt h5{
+    font-size: 27.871px;
+  }
+  .cardtxt h6{
+    font-size: 11.583px;
+    
+  }
+  .cakecard{
+    gap: 15px;
+  }
+  .hov3d{
+    width: 208px;
+    height: 119px;
+    scale: 0.5;
+  }
+  .footerrow{
+    flex-direction: column;
+  }
+  .footcol{
+    width: 100%;
+  }
+  footer{
+    height: 100%;
+    padding: 50px 0;
   }
 }

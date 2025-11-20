@@ -116,3 +116,58 @@ section3.onmouseenter = function () {
             txt2025.style.transform = "translateX(0)";
 
         }
+
+        let burger = document.querySelector(".burger");
+        let menu = document.querySelector(".burgermenu");
+        let closeX = document.getElementById("x");
+burger.onclick = () => {
+    menu.classList.add("active");
+  };
+  
+  closeX.onclick = () => {
+    menu.classList.remove("active");
+  };
+
+
+const model = document.querySelector(".croissanth");
+
+const mobileQuery = window.matchMedia("(min-width: 300px) and (max-width: 600px)");
+
+function updateModelSettings() {
+  if (mobileQuery.matches) {
+    
+    model.setAttribute("camera-target", "0m 0m -0.004743m");
+    model.setAttribute("camera-orbit", "-108.3deg 17.7deg 2.5m");
+    model.setAttribute("field-of-view", "29.76deg");
+  } else {
+  
+    model.setAttribute("camera-target", "0m 0m 0m");
+    model.setAttribute("camera-orbit", "-142.2deg 77.78deg 2.51m");
+    model.setAttribute("field-of-view", "30deg");
+  }
+}
+
+updateModelSettings(); 
+mobileQuery.addEventListener("change", updateModelSettings); 
+
+let svg = document.querySelector(".svg");
+let path = svg.querySelector("path")
+
+const pathLength = path.getTotalLength();
+
+gsap.set(path , { 
+  strokeDasharray: pathLength,
+  strokeDashoffset: pathLength
+});
+
+gsap.to(path, {
+  strokeDashoffset: 0,
+  
+  duration: 50,
+  scrollTrigger: {
+    trigger: ".svg",
+    start: "top 20%",
+    end: "bottom 20%",
+    scrub: 2.5
+  }
+});
