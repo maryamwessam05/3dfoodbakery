@@ -171,3 +171,15 @@ gsap.to(path, {
     scrub: 2.5
   }
 });
+
+
+
+function check(element) {
+  if (element.classList.contains("checked")) {
+   
+    element.classList.remove("checked");
+  } else {
+    
+    element.classList.add("checked");
+  }
+}
