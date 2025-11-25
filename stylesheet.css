@@ -239,6 +239,28 @@ main{
   cursor: pointer;
 }
 
+.explore2{
+  display: flex;
+  padding: 25px 80px;
+  justify-content: center;
+  align-items: center;
+  margin: -15px;
+  gap: 10px;
+  position: relative;
+  border: 2px solid var(--grey, #5B5758);
+  background: var(--beige, #FFFDF4);
+  color: var(--grey, #5B5758);
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 78.24%; /* 18.778px */
+  transition: all 300ms ease;
+  cursor: pointer;
+  width: 30%;
+}
+
 .greentxt{
   display: inline-block;
 
@@ -301,6 +323,12 @@ color: var(--beige, #FFFDF4);
 
 }
 
+.explore2:hover{
+  border: 2px solid var(--beige, #FFFDF4);
+background: var(--grey, #5B5758);
+color: var(--beige, #FFFDF4);
+
+}
 .section2{
   position: relative;
   width: 100%;
@@ -1144,6 +1172,11 @@ align-self: stretch;
   .explore{
     padding: 14.479px 46.333px;
     font-size: 13.9px;
+  }
+  .explore2{
+    padding: 14.479px 46.333px;
+    font-size: 13.9px;
+        border: 1px solid var(--grey, #5B5758);
   }
   .svg{
     height: 976px;
@@ -2047,3 +2080,715 @@ line-height: 12.967px;
 }
 }
   
+
+/* MENU STYLE */
+
+.hero_menu{
+  width: 100%;
+  background: #2E422C;
+padding: 65px 42px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 5vw;
+overflow: hidden;
+  
+}
+
+.ourmenuline{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+overflow: hidden;
+animation: width 800ms ease;
+
+width: 100%;  
+}
+
+.ourmenuline h3{
+  color: #FFFDF4;
+font-family: "Roboto Condensed";
+font-size: 2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 75% */
+
+}
+
+.line{
+  width: 43%;
+height: 1px;
+background: #FFFDF4;
+
+}
+
+.hero_titleMen{
+  color: #FFFDF4;
+text-align: center;
+font-family: "Winter Vibes";
+font-size: 14.5vw;
+font-style: normal;
+font-weight: 400;
+width: 100%;
+border-bottom: 1px solid #FFFDF4;
+overflow: hidden;
+ animation: expand 800ms ease forwards;
+
+}
+
+.bakedgoods{
+  background-image: url(img/Frame\ 183.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  animation: width 900ms ease 300ms;
+}
+
+.bake1{
+  width: 388.473px;
+height: 256.25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bake13d{
+  scale: 2.6;
+}
+
+.bake2{
+  width: 339.332px;
+height: 265.516px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bake23d{
+  scale: 2.5;
+}
+
+.bake3{
+  width: 339.332px;
+height: 265.516px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bake33d{
+  scale: 2.2;
+}
+
+.hero_menu h4{
+  color: #FFFDF4;
+text-align: center;
+font-family: "Roboto Condensed";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+}
+
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes width {
+  0%{
+    scale: 0;
+  }
+  100%{
+    scale: 1;
+  }
+}
+
+@keyframes expand {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 300px;
+  }
+}
+
+.dessertMenu{
+  width: 100%;
+      height: 119vh;
+
+  background: #FFFDF4;
+  display: flex;
+  align-items: flex-start;
+  padding: 5vw 0;
+  justify-content: center;
+}
+.container80{
+  width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    align-items: center;
+    max-width: 1210px;
+}
+.menuSub{
+  width:  100%;
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+
+.menuSub h2{
+  color: #5B5758;
+text-align: center;
+text-transform: uppercase;
+font-family: "Roboto Condensed";
+font-size: 3vw;
+font-style: normal;
+font-weight: 300;
+line-height: 78.24%; /* 43.701px */
+}
+
+.lineblack{
+  height: 1px;
+  background: #5B5758;
+  width: 85%;
+}
+
+.menucards{
+  width: 100%;
+  display: flex;
+  height: 75vh;
+  justify-content: space-between;
+}
+
+.cardMenu{
+  display: flex;
+  padding: 41px 26px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+  border: 1px solid #5B5758;
+  width: 30%;
+}
+
+.menuitem{
+    width: 100%;
+    height: 184px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+
+.menucrois{
+  scale: 1.1;
+}
+
+.menuheadline{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  width: 100%;
+}
+
+.menuheadline h4{
+  color: #2E422C;
+font-family: "Roboto Condensed";
+font-size: 30px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 93.333% */
+}
+
+.menuheadline h6{
+  color: #5B5758;
+font-family: "Roboto Condensed";
+font-size: 28px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px; /* 100% */
+}
+
+.menuheadline span{
+  color: #2E422C;
+font-family: "Roboto Condensed";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 87.5% */
+}
+
+.counter{
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+
+.counter button{
+  width: 54.638px;
+height: 54.638px;
+border: 1px solid #5B5758;
+background-color: #FFFDF4;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.counter h5{
+  color: #5B5758;
+font-family: "Roboto Condensed";
+font-size: 32px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px; /* 87.5% */
+}
+
+.menuitem model-viewer {
+      width: 81%;
+    height: 141%;
+}
+
+
+.cupcakemenu{
+  scale: 0.9;
+}
+
+.breadmenu{
+  scale: 1.1;
+}
+
+.cakemenu{
+  scale: 1.1;
+}
+
+.bakegame{
+      width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    padding: 3vw 0;
+}
+
+.gamecont{
+  width: 92%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagebox{
+  background-image: url(img/Frame\ 85.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+  position: relative;
+  
+}
+
+.croisgame{
+  position: absolute;
+    top: 96px;
+    left: 211px;
+    opacity: 0;
+}
+
+.cupgame{
+      position: absolute;
+    top: 88px;
+    right: 229px;
+    opacity: 0;
+}
+
+.donutgame{
+      position: absolute;
+    top: 243px;
+    left: 211px;
+    opacity: 0;
+}
+
+.pretzelgame{
+      position: absolute;
+    top: 243px;
+    right: 221px;
+    opacity: 0;
+}
+
+.txtoxgame{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 26px;
+width: 37%;
+}
+
+.txtoxgame h1{
+  color: #5B5758;
+font-family: "Roboto Condensed";
+font-size: 86.687px;
+font-style: normal;
+font-weight: 500;
+line-height: 80.908px; /* 93.333% */
+}
+
+.txtoxgame span{
+  color: #2E422C;
+font-family: Allison;
+font-size: 103.436px;
+font-style: normal;
+font-weight: 400;
+line-height: 80.908px;
+}
+
+.gamechoices{
+  display: flex;
+align-items: flex-start;
+align-content: flex-start;
+gap: 20px;
+align-self: stretch;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.choicebox1, .choicebox2, .choicebox3, .choicebox4{
+  width: 47%;
+  border: 2px solid #5B5758;
+  padding: 14px 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+
+.choicebox1 img,  .choicebox3 img, .choicebox4 img{
+  width: 108px;
+    height: 96px;
+}
+.choicebox2 img{
+      width: 66.35px;
+}
+
+@media (min-width: 600px) and (max-width: 1070px){
+  .line{
+    width: 40%;
+  }
+  .hero_titleMen{
+    font-size: 13vw;
+  }
+  .bake13d , .bake23d{
+    width: 45%;
+    
+  }
+  .bake33d {
+        width: 53%;
+    }
+.bake1 {
+    width: 265px;
+      height: 188px;}
+    
+.bake2 {
+    width: 272.332px;
+      height: 188px;}
+
+    
+.bake3 {
+    width: 216.332px;
+      height: 188px;}
+.menuheadline h4{
+  font-size: 17px;
+}
+.menuheadline h6{
+  font-size: 16px;
+}
+.menuheadline span{
+  font-size: 18px;
+}
+.counter button{
+  scale: 0.55;
+}
+.counter h5{
+  font-size: 18px;
+}
+.menuheadline{
+  gap: 0.5vw;
+}
+.menucards{
+  height: 53vh;
+}
+.dessertMenu{
+  height: 82vh;
+}
+.bakegame{
+  height: 57vh;
+}
+.txtoxgame h1{
+  font-size: 50px;
+  
+  line-height: 46.859px;
+}
+.txtoxgame span{
+  font-size: 59px;
+  line-height: 46.859px;
+}
+.imagebox{
+  width: 55%;
+}
+.txtoxgame {
+  width: 42%;
+}
+.choicebox1 img,  .choicebox3 img, .choicebox4 img{
+  width: 75.871px;
+height: 64.287px;
+}
+.choicebox2 img {
+    width: 44.35px;
+}
+.gamechoices{
+      gap: 7px;
+}
+.choicebox1, .choicebox2, .choicebox3, .choicebox4{
+  width: 49%;
+}
+.cupgame{
+      top: 64px;
+    right: 124px;
+    scale: 0.9;
+}
+.croisgame{
+      top: 72px;
+    left: 113px;
+    scale: 0.8;
+}
+.pretzelgame{
+  top: 179px;
+    scale: 0.8;
+    right: 221px;
+}
+.donutgame{
+      top: 189px;
+    left: 228px;
+    scale: 0.8;
+
+}
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+  .hero_menu {
+    padding: 65px 24px;}
+    .line{
+      width: 38%;
+    }
+  .ourmenuline{
+    justify-content: center;
+  }
+  .hero_titleMen{
+    font-size: 12.5vw;
+  }
+  .bake1 {
+    width: 37%;
+           height: 174.516px;}
+
+  .bake13d{
+    scale: 1.2;
+  }
+  .bake2{
+    width: 32%;
+            height: 174.516px;;
+  }
+  .bake23d{
+    scale: 1.5;
+  }
+  .bake3 {
+    width: 30%;
+            height: 174.516px;}
+  .bake33d{
+    scale: 1.4;
+  }
+  .hero_menu h4{
+    font-size: 14px;
+  }
+  .lineblack{
+    display: none;
+  }
+  .menuSub h2 {
+    font-size: 10vw;
+  }
+  .menuSub{
+    justify-content: center;
+  }
+  .dessertMenu{
+    height: auto;
+        padding: 10vw 0;
+  }
+  .menucards{
+    height: fit-content;
+    flex-direction: column;
+            gap: 10vw;
+        align-items: center;
+  }
+  .cardMenu{
+    width: 92%;
+  }
+  .container80 {
+    gap: 8vw;}
+
+  .menuheadline h4{
+    font-size: 17px;
+  }
+  .menuheadline h6{
+    font-size: 16px;
+  }
+  .menuheadline span{
+    font-size: 19px;
+  }
+  .counter button{
+    scale: 0.7;
+  }
+  .counter h5{
+    font-size: 25px;
+  }
+  .cardMenu{
+    padding: 28px 26px;
+    gap: 7vw;
+  }
+
+  .explore2{
+        width: 92%;
+        font-size: 20px;
+            border: 1px solid var(--grey, #5B5758);
+  }
+  .bakegame{
+    height: fit-content;
+  }
+  .gamecont{
+    flex-direction: column;
+    gap: 3vw;
+  }
+  .imagebox{
+    width: 100%;
+    height: 300px;
+  }
+  .txtoxgame h1{
+    font-size: 40px;
+    line-height: 30.607px;
+    text-align: center;
+  }
+  .txtoxgame span{
+    font-size: 45px;
+line-height: 30.607px;
+  }
+  .txtoxgame{
+    width: 100%;
+  }
+  .cupgame {
+    top: 39px;
+    right: 77px;
+    scale: 0.8;
+  }
+  .croisgame{
+    top: 56px;
+    left: 58px;
+    scale: 0.7;
+  }
+  .donutgame{
+        top: 144px;
+    left: 155px;
+    scale: 0.7;
+  }
+  .pretzelgame{
+        top: 151px;
+    right: 155px;
+    scale: 0.7;
+  }
+  }
+
+  /* ABOUT STYLE */
+
+  .about_hero{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFDF4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  .about_title{
+    width: 95%;
+    position: relative;
+  }
+
+  .about_title h1{
+    color: var(--green, #2E422C);
+text-align: center;
+font-family: "Winter Vibes";
+font-size: 19vw;
+font-style: normal;
+font-weight: 400;
+line-height: 93%; /* 232.812px */
+letter-spacing: -2.503px;
+  }
+
+  .arr{
+    position: absolute;
+  }
+
+  .hash{
+    position: absolute;
+        bottom: 0;
+    right: 0;
+  }
+
+  .cutting{
+        position: absolute;
+    z-index: 999999;
+    scale: 2;
+        top: 146px;
+
+  }
+
+  .readmore{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    color: #2E422C;
+font-family: "Roboto Condensed";
+font-size: 28.345px;
+font-style: normal;
+font-weight: 400;
+line-height: 78.24%; /* 22.177px */
+  }
+.readarr{
+  animation: updown 1000ms ease  infinite ;
+}
+  @keyframes updown {
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+       transform: translateY(-15px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }

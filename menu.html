@@ -71,7 +71,321 @@
     </header>
     <main>
         <section class="hero_menu">
+            <div class="ourmenuline">
+                <div class="line"></div>
+                <h3>OUR MENU</h3>
+                <div class="line"></div>
+            </div>
+            <div class="hero_titleMen">
+                Baked to Perfection
+            </div>
+            <div class="bakedgoods">
+                <div class="bake1">
+                    <model-viewer class="bake13d" src="3d models/cranberry_bread_whpmact_mid.glb"  disable-zoom camera-controls bounds="tight"
+  camera-target="auto auto auto" tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="56.09deg 57.82deg 0.3836m" field-of-view="30deg" interaction-prompt="none"> </model-viewer>
+                </div>
+                <div class="bake2">
+                    <model-viewer class="bake23d" disable-zoom src="3d models/pork_pie_wf0hdhxs_mid.glb" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="10.67deg 61.77deg 0.4176m" field-of-view="30deg" interaction-prompt="none"> </model-viewer>
+                </div>
+                <div class="bake3">
+                    <model-viewer class="bake33d" src="3d models/round_white_bread_whplffy_mid.glb" disable-zoom camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="28.05deg 45.97deg 0.3595m" field-of-view="30deg" interaction-prompt="none"> </model-viewer>
+                </div>
+            </div>
+            <h4>Explore every layer of sweetness, one bite at a time.</h4>
+        </section>
+
+        <section class="dessertMenu">
+            <div class="container80">
+                <div class="menuSub">
+                    <h2>Desserts</h2> 
+                    <div class="lineblack"></div>
+                </div>
+
+                <div class="menucards">
+                    
+                    <div class="cardMenu">
+                        <div class="menuitem">
+                            <model-viewer class="menucrois" src="3d models/croissant+3d+model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.74" camera-orbit="0deg 75deg 2.51m" field-of-view="30deg" auto-rotate> </model-viewer>
+                        </div>
+                        <div class="menuheadline">
+                            <h4>Signature Croissant</h4>
+                            <h6>Buttery layers of perfection</h6>
+                            <span>$4.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num">0</h5>
+                                <button onclick="increase('num')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardMenu">
+                        <div class="menuitem">
+<model-viewer class="chocdonut" src="3d models/chocolate_donut.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.74" auto-rotate camera-orbit="88.47deg 15.95deg 2.667m" field-of-view="29.21deg"> </model-viewer>
+                        </div>
+                        <div class="menuheadline">
+                            <h4>Chocolate Donut</h4>
+                            <h6>Buttery layers of perfection</h6>
+                            <span>$4.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num2')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num2">0</h5>
+                                <button onclick="increase('num2')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardMenu">
+                        <div class="menuitem">
+<model-viewer src="3d models/cup_cake.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.74" auto-rotate camera-orbit="80.97deg 86.45deg 33.97m" field-of-view="30deg"> </model-viewer>
+                        </div>
+                        <div class="menuheadline">
+                            <h4>Chocolate Cupcake</h4>
+                            <h6>Classic Vanilla Dream</h6>
+                            <span>$4.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num3')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num3">0</h5>
+                                <button onclick="increase('num3')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                 <button class="explore2">
+                EXPLORE MORE
+            </button>
+            </div>
+
             
+            
+        </section>
+        <section class="dessertMenu">
+            <div class="container80">
+                <div class="menuSub">
+                    <h2>BREADS</h2> 
+                    <div class="lineblack"></div>
+                </div>
+
+                <div class="menucards">
+                    
+                    <div class="cardMenu">
+                        <div class="menuitem">
+                            <model-viewer class="readmen" src="3d models/round_white_bread_whplffy_mid.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.74" auto-rotate camera-orbit="145deg 19.31deg 0.3563m" field-of-view="29.47deg"> </model-viewer>
+
+                        </div>
+                        <div class="menuheadline">
+                            <h4>Sourdough Bread</h4>
+                            <h6>Buttery layers of perfection</h6>
+                            <span>$8.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num4')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num4">0</h5>
+                                <button onclick="increase('num4')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardMenu">
+                        <div class="menuitem">
+<model-viewer src="3d models/walnut_bread_tf3ibcppa_high.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.74" auto-rotate camera-orbit="211.9deg 0.0000573deg 0.8983m" field-of-view="30deg"> </model-viewer>
+                        </div>
+                        <div class="menuheadline">
+                            <h4>French Baguette</h4>
+                            <h6>Freshly baked bread</h6>
+                            <span>$4.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num5')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num5">0</h5>
+                                <button onclick="increase('num5')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardMenu">
+                        <div class="menuitem">
+<model-viewer src="3d models/chocolate_pastry_ti2jdifva_high.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.74" auto-rotate camera-orbit="148.8deg 0.0000573deg 0.2323m" field-of-view="30deg"> </model-viewer>
+                        </div>
+                        <div class="menuheadline">
+                            <h4>Chocolate Pastry</h4>
+                            <h6>Classic Vanilla Dream</h6>
+                            <span>$4.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num6')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num6">0</h5>
+                                <button onclick="increase('num6')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                 <button class="explore2">
+                EXPLORE MORE
+            </button>
+            </div>
+
+            
+            
+        </section>
+        <section class="dessertMenu">
+            <div class="container80">
+                <div class="menuSub">
+                    <h2>SPECIALS</h2> 
+                    <div class="lineblack"></div>
+                </div>
+
+                <div class="menucards">
+                    
+                    <div class="cardMenu">
+                        <div class="menuitem">
+<model-viewer src="3d models/cake.glb" class="cakemenu" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.74" camera-orbit="233.5deg 44.24deg 1.558m" field-of-view="30deg" auto-rotate> </model-viewer>
+
+                        </div>
+                        <div class="menuheadline">
+                            <h4>Strawberry Cheesecake</h4>
+                            <h6>Buttery layers of perfection</h6>
+                            <span>$8.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num7')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num7">0</h5>
+                                <button onclick="increase('num7')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardMenu">
+                        <div class="menuitem">
+<model-viewer src="3d models/pork_pie_wfzjegjs_high.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.74" auto-rotate camera-orbit="268.7deg 43.06deg 0.3908m" field-of-view="30deg"> </model-viewer>
+                        </div>
+                        <div class="menuheadline">
+                            <h4>Pork Pie</h4>
+                            <h6>Freshly baked bread</h6>
+                            <span>$4.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num8')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num8">0</h5>
+                                <button onclick="increase('num8')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardMenu">
+                        <div class="menuitem">
+<model-viewer src="3d models/fbx.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.74" auto-rotate camera-orbit="308.4deg 67.75deg 1.823m" field-of-view="30deg"> </model-viewer>
+                        </div>
+                        <div class="menuheadline">
+                            <h4>Chocolate Cake</h4>
+                            <h6>Classic Vanilla Dream</h6>
+                            <span>$4.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num9')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num9">0</h5>
+                                <button onclick="increase('num9')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                 <button class="explore2">
+                EXPLORE MORE
+            </button>
+            </div>
+
+            
+            
+        </section>
+        <section class="dessertMenu">
+            <div class="container80">
+                <div class="menuSub">
+                    <h2>PASTRIES</h2> 
+                    <div class="lineblack"></div>
+                </div>
+
+                <div class="menucards">
+                    
+                    <div class="cardMenu">
+                        <div class="menuitem">
+<model-viewer src="3d models/pretzel_vcqhain_mid.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="1.2" auto-rotate camera-orbit="411.7deg 0.0000573deg 0.3044m" field-of-view="30deg"> </model-viewer>
+
+                        </div>
+                        <div class="menuheadline">
+                            <h4>Salted Pretzel</h4>
+                            <h6>Buttery layers of perfection</h6>
+                            <span>$8.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num10')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num10">0</h5>
+                                <button onclick="increase('num10')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardMenu">
+                        <div class="menuitem">
+<model-viewer src="3d models/melonpan.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0.61" exposure="0.86" auto-rotate camera-orbit="410.3deg 27.25deg 0.2211m" field-of-view="30deg"> </model-viewer>
+                        </div>
+                        <div class="menuheadline">
+                            <h4>Lemon Pan</h4>
+                            <h6>Freshly baked bread</h6>
+                            <span>$4.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num11')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num11">0</h5>
+                                <button onclick="increase('num11')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardMenu">
+                        <div class="menuitem">
+<model-viewer src="3d models/tart.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0.61" exposure="0.86" auto-rotate camera-orbit="592.2deg 51.34deg 0.1242m" field-of-view="30deg"> </model-viewer>
+                        </div>
+                        <div class="menuheadline">
+                            <h4>Smore Tart</h4>
+                            <h6>Classic Vanilla Dream</h6>
+                            <span>$4.50</span>
+                            <div class="counter">
+                                <button onclick="decrease('num12')"><img src="img/Vector.svg" alt=""></button>
+                                <h5 id="num12">0</h5>
+                                <button onclick="increase('num12')"><img src="img/Vector-1.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                 <button class="explore2">
+                EXPLORE MORE
+            </button>
+            </div>
+
+            
+            
+        </section>
+
+        <section class="bakegame">
+            <div class="gamecont">
+                <div class="imagebox">
+                    <img class="croisgame" src="img/20251105_1247_Top View Croissant_remix_01k99szqqjevcrkx7tnyfysgf8 1.png" alt="">
+                    <img class="cupgame" src="img/chocolate_cupcake.glb Render.png" alt="">
+                    <img class="donutgame" src="img/chocolate_donut.glb Render.png" alt="">
+                    <img class="pretzelgame" src="img/pretzel_vcqhain_mid.glb Render.png" alt="">
+                </div>
+                <div class="txtoxgame">
+                    <h1>BUILD YOUR OWN <span>BOX</span></h1>
+
+                    <div class="gamechoices">
+                        <div onclick="crois()" class="choicebox1"><img src="img/20251105_1247_Top View Croissant_remix_01k99szqqjevcrkx7tnyfysgf8 1.png" alt=""></div>
+                        <div  onclick="cup()" class="choicebox2"><img src="img/chocolate_cupcake.glb Render.png" alt=""></div>
+                        <div  onclick="don()" class="choicebox3"><img src="img/chocolate_donut.glb Render.png" alt=""></div>
+                        <div  onclick="pret()" class="choicebox4"><img src="img/pretzel_vcqhain_mid.glb Render.png" alt=""></div>
+                        
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -121,7 +435,7 @@
                     <span>© 2024 Bake Today. All rights reserved.</span>
     </footer>
 
-    <script src="code.js"></script>
+    <script src="menu.js "></script>
     
 </body>
 </html>
