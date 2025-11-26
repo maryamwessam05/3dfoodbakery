@@ -2796,7 +2796,8 @@ line-height: 78.24%; /* 22.177px */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+        height: fit-content;
+    padding-bottom: 3vw;
     align-items: flex-start;
   }
 
@@ -2805,6 +2806,9 @@ line-height: 78.24%; /* 22.177px */
     flex-direction: column;
     width: 44%;
     gap: 3vw;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 300ms ease;
   }
   .header_about2{
     position: relative;
@@ -2831,6 +2835,10 @@ line-height: 88%;
 
   .about_img{
     width: 48%;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 300ms ease;
   }
 
   .about_img img{
@@ -2843,11 +2851,196 @@ line-height: 88%;
     right: 17px;
   }
 
-  .header_about2 p{
+  .about2_txt p{
     color: #4B5563;
 font-family: "Roboto Condensed";
 font-size: 24px;
 font-style: normal;
 font-weight: 300;
 line-height: 28px; /* 116.667% */
+  }
+
+  .location{
+    display: flex;
+    gap: 1vw;
+    opacity: 0;
+    width: 0;
+    transition: all 300ms ease;
+    position: absolute;
+    top: 130px;
+    left: 103px;
+    overflow: hidden;
+    
+  }
+    .location2{
+    display: flex;
+    gap: 1vw;
+    opacity: 0;
+    width: 0;
+    transition: all 300ms ease;
+    position: absolute;
+    top: 368px;
+    left: 103px;
+    overflow: hidden;
+  }
+    .location3{
+    display: flex;
+    gap: 1vw;
+    
+    position: absolute;
+        top: 258px;
+    right: 73px;
+    overflow: hidden;
+    opacity: 0;
+    width: 0;
+    transition: all 300ms ease;
+  }
+
+  .about_img:hover .location{
+    opacity: 1;
+    width: fit-content;
+  }
+
+.about_img:hover .location2{
+    opacity: 1;
+    width: fit-content;
+  }
+
+  .about_img:hover .location3{
+    opacity: 1;
+    width: fit-content;
+  }
+  .locpop{
+    display: inline-flex;
+padding: 8px 25px 8px 13px;
+align-items: center;
+gap: 10px;
+border: 1px solid #2E422C;
+background: #FFFDF4;
+width: 100%;
+  }
+
+  .locpop h6{
+    color: var(--body, #313131);
+font-family: "Roboto Condensed";
+font-size: 19.034px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 22.841px */
+  }
+
+  .locpop span{
+    color: var(--grey, #5B5758);
+font-family: "Roboto Condensed";
+font-size: 19.034px;
+font-style: normal;
+font-weight: 300;
+line-height: 120%;
+  }
+
+  .location img , .location2 img, .location3 img{
+    width: 38px;
+height: 54px;
+  }
+
+  .about3{
+    width: 100%;
+    background: #2E422C;
+    padding: 6vw 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bakingcont{
+    width: 85%;
+    height: fit-content;
+  }
+
+  .msgwhite{
+    width: 100% ;
+    height: 48vh;
+    background-color: #FFFDF4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 11.8px 0 rgba(0, 0, 0, 0.25);
+    
+  }
+
+  .msgcont{
+    width: 95%;
+    height: 84%;
+    border: 1px solid #313131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    flex-direction: column;
+  }
+
+  .msgcont h4{
+    color: var(--body, #313131);
+text-align: center;
+font-family: "Winter Vibes";
+font-size: 83.16px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 1.663px;
+line-height: 70px;
+  }
+
+  .msgcont p{
+    color: var(--grey, #5B5758);
+text-align: center;
+font-family: "Roboto Condensed";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 35px; /* 109.375% */
+letter-spacing: 0.64px;
+  }
+
+
+    .msgreen{
+    width: 100% ;
+    height: 48vh;
+    background-color: #2E422C;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 6px 11.8px 0 rgba(0, 0, 0, 0.25);
+
+    justify-content: center;
+  }
+
+  .msgcontg{
+    width: 95%;
+    height: 84%;
+    border: 1px solid #FFFDF4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    flex-direction: column;
+  }
+
+  .msgcontg h4{
+    color: #FFFDF4;
+text-align: center;
+font-family: "Winter Vibes";
+font-size: 83.16px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 1.663px;
+line-height: 70px;
+  }
+
+  .msgcontg p{
+    color: #FFFDF4;
+text-align: center;
+font-family: "Roboto Condensed";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 35px; /* 109.375% */
+letter-spacing: 0.64px;
   }

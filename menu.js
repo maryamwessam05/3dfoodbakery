@@ -36,3 +36,4 @@ burger.onclick = () => {
     function pret(){
     document.querySelector(".pretzelgame").style.opacity="1";
   }
+
