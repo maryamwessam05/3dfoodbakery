@@ -53,10 +53,10 @@
 
             <div class="burgerlist">
                 <a class="burgerlink" href="index.html">HOME</a>
-                <a class="burgerlink" href="index.html">MENU</a>
-                <a class="burgerlink" href="index.html">ABOUT</a>
-                <a class="burgerlink" href="index.html">REVIEWS</a>
-                <a class="burgerlink" href="index.html">CONTACT</a>
+                <a class="burgerlink" href="menu.html">MENU</a>
+                <a class="burgerlink" href="about.html">ABOUT</a>
+                <a class="burgerlink" href="reviews.html">REVIEWS</a>
+                <a class="burgerlink" href="contact.html">CONTACT</a>
             </div>
             <div class="profiletab">
                 <img src="img/profileb.svg" alt="">
@@ -97,8 +97,23 @@
             </button>
             </div>
             <div class="about_img">
-                <img src="img/20251111_2152_3D Earth Model_simple_compose_01k9t7jg3kfpt93mcyqhqqe9db 1.png" alt="">
-                <div class="location">
+                    <div class="earth">
+                <model-viewer auto-rotate disable-zoom interaction-prompt="none" class="earth3d" src="3d models/Earth.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0.05" camera-orbit="284.8deg 72.83deg 7.377m" field-of-view="30deg" shadow-softness="1" min-camera-orbit="48deg 70deg auto" max-camera-orbit="113deg 80deg auto">
+                    <button onclick="hotspot()" style="margin-top: -90px;" class="Hotspot" slot="hotspot-1" data-position="1.1888676618401397m 0.6543231739658006m 0.8246367912931032m" data-normal="0.7896252604502014m 0.28900404229062643m -0.5412657495155493m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Organic Flour
+                            <span>Normandy, France</span></div>
+                    </button><button onclick="hotspot()" class="Hotspot" slot="hotspot-3" data-position="1.1030816459041999m -0.14669236881607717m 0.5587396622028002m" data-normal="0.695338803135008m -0.09754909509356721m -0.7120309845092424m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Fair Trade Cocoa
+                            <span>Ecuador</span></div>
+                    </button><button onclick="hotspot()" class="Hotspot" slot="hotspot-4" data-position="1.5700320608053961m 0.4703272653866635m 1.611540282087185m" data-normal="0.9366521431772733m 0.2890038482488787m -0.19788769132707545m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Range Eggs
+                           <span>Domyar, Egypt</span> </div>
+                    </button>
+                </model-viewer>
+
+
+                    </div>                
+                    <!-- <div class="location">
                     <img class="loc" src="img/Frame 111.svg" alt="">
                     <div class="locpop">
                         <h6>Organic Flour <br> <span>Normandy, France</span></h6>
@@ -119,11 +134,12 @@
  <span>Ecuador</span></h6>
                         
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
         <section class="about3">
+            <h1>Our <span>Baking</span> Process</h1>
             <div class="bakingcont">
                 <div class="msgwhite">
                     <div class="msgcont">
@@ -132,13 +148,77 @@
                     </div>
                 </div>
                 <div class="msgreen">
+                    <img src="img/arrg.svg" class="arrg" alt="">
                     <div class="msgcontg">
-                        <h4>The First Batch</h4>
-                        <p>“It all started in a small kitchen with a love for buttery croissants and morning warmth.”</p>
+                        <h4>Our Recipe Grows</h4>
+                        <p>“Experimenting with flavors and perfecting our signature dough.”</p>
+                    </div>
+                </div>
+                <div class="msgwhite">
+                    <div class="msgcont">
+                        <h4>The Oven Opens</h4>
+                        <p>“Our first bakery opens its doors — a neighborhood filled with the scent of fresh bakes.”</p>
+                    </div>
+                    <img src="img/arrw.svg" class="arrw" alt="">
+                </div>
+                <div class="msgreen">
+                    <div class="msgcontg">
+                        <h4>The Future is Rising</h4>
+                        <p>“Blending tradition with technology — bringing our bakery experience to life in 3D.”</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="about4">
+            <h1>Our <span>Products</span> Steals </h1>
+            <div class="doncont">
+            <model-viewer disable-zoom poster="poster.webp" src="3d models/donuts_on_plate (1).glb" class="don3d" id="donutModel" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"  shadow-intensity="0.5" camera-orbit="135.1deg 76.38deg 0.4502m" field-of-view="40deg">
+                    
+                        <button class="Hotspot2" slot="hotspot-1" data-position="-0.004384638055249301m 0.07060075389209013m -0.04486426858446059m" data-normal="0.029820048350983633m 0.654593998523003m -0.7553922569195503m" data-visibility-attribute="visible">
+                            <div class="linegreen"></div>
+                            <div class="HotspotAnnotation2">
+                                <h3>Honest Ingredients</h3>
+                                <h5>Simple, fresh, and perfectly baked.</h5>
+                            </div>
+                        </button>
+                        
+                    
+                
+                    <button class="Hotspot2" slot="hotspot-2" data-position="0.03678183168373278m 0.007950924070517354m -0.07464633638398066m" data-normal="0.2679075201961299m 0.8745974964343854m -0.40410986111831704m" data-visibility-attribute="visible">
+                        <div class="linegreen"></div>
+                            <div class="HotspotAnnotation2">
+                                <h3>From Field to Oven</h3>
+                                <h5>Locally sourced, freshly crafted.</h5>
+                            </div>
+                    </button>
+                  
+                    
+           
+                    <button class="Hotspot4" slot="hotspot-3" data-position="0.1019363435010312m 0.03407811424191534m 0.006170560028036079m" data-normal="0.9863788158964303m -0.16388478840792306m -0.014092823678962859m" data-visibility-attribute="visible">
+                        <div class="linegreen"></div>
+                            <div class="HotspotAnnotation2">
+                                <h3>Nature’s Bakes</h3>
+                                <h5>Pure grains, fresh butter, real flavor.</h5>
+                            </div>
+                    </button>
+                 
+                   
+                   
+                        <button class="Hotspot3" slot="hotspot-4" data-position="0.03870975092660878m 0.07568996699503591m 0.019267734306696278m" data-normal="0.9611350325231764m 0.07110703372116481m 0.26676438857548007m" data-visibility-attribute="visible">
+                            <div class="linegreen2"></div>
+                            <div class="HotspotAnnotation3">
+                                <h3>Made from Good </h3>
+                                <h5>Quality you can see.</h5>
+                            </div>
+                        </button>
+                       
+                    
+                </model-viewer>
+
+            </div>
+
+        </div>
         <section class="cta_con">
             <div class="allcont">
             <h1 class="cta_title">Stay <span>Crumb</span> CONNECTED</h1>
