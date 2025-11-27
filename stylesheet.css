@@ -1507,6 +1507,19 @@ border: 1.08px solid var(--grey, #5B5758);
   .choices{
     width: 265.025px;
   }
+      .half1,
+    .half2,
+    .sec3_img,
+    .sec3_txt,
+    .img2015,
+    .txt2015,
+    .img2018,
+    .txt2018,
+    .img2025,
+    .txt2025 {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+    }
   .half2{
     width: 100%;
     height: 44vh;
@@ -2763,7 +2776,7 @@ letter-spacing: -2.503px;
   }
 
   .readmore{
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
